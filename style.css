@@ -145,3 +145,20 @@ p {
     margin-top: 20px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
+
+#end-Game {
+    background-image: url('images/heaven.jpg');
+    background-size: 100% 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    color: gold;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    ;
+}

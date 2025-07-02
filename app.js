@@ -30,15 +30,16 @@ function play() {
         
         if (puzzlesSolved === puzzles.length) {
             setTimeout(() => {
-                result.textContent = "🎉 You won! you're worthy of a mysterious scholar's society known as The Order of the Chalk.🎉";
-                result.style.color = "gold";
-                result.style.fontSize = "3em";
-            
+                
                 // Hide the input and submit button since game is over
+                document.getElementById('result').style.display = 'none';
+                document.getElementById('end-Game').style.display = 'block'; // Show end game message
                 document.getElementById('answer').style.display = 'none';
                 document.getElementById('submit').style.display = 'none';
                 document.getElementById('question').style.display = 'none';
                 document.getElementById('letter').style.display = 'none'; // Show letter display
+                 
+               // Hide game interface
             }, 400);
         } else {
             setTimeout(() => {
@@ -104,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Hide game interface and reset button
         document.querySelector('.game-interface').style.display = 'none';
         document.querySelector('.reset-container').style.display = 'none';
+        document.getElementById('end-Game').style.display = 'none'; // Hide end game message
         // Show start button again
         document.querySelector('.start-container').style.display = 'block';
         document.querySelector('.startMenu-container').style.display = 'block';
@@ -114,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('answer').value = "";
         document.getElementById('answer').style.display = 'block';
         document.getElementById('submit').style.display = 'block';
+        document.getElementById('question').style.display = 'block';
         document.getElementById('letter').textContent = ""; // Clear letter display
     });
     
