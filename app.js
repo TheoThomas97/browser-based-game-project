@@ -118,8 +118,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('submit').style.display = 'block';
         document.getElementById('question').style.display = 'block';
         document.getElementById('letter').textContent = ""; // Clear letter display
+        document.getElementById('letter').style.display = 'block'; // Show letter display
     });
     
     // Keep button functionality for submitting answers
     document.querySelectorAll('button#submit').forEach(btn => btn.addEventListener('click', play));
 });
+
+//display
+document.body.style.height = "10vh";
+

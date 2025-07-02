@@ -4,6 +4,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+ 
+}
 
 .reset-container {
     position: fixed;
@@ -17,9 +22,9 @@ body {
     transform: translateX(-50%);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 80px;
+    padding: 60px;
     border-radius: 10px;
-    color: rgb(169, 134, 73);
+    color: white;
 }
 .nextPage-container {
     position: fixed;
@@ -153,12 +158,18 @@ p {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    font-size: 3em;
-    color: gold;
-    margin-top: 20px;
+    font-size: 2.5em;
+    color: black;
+    border-top: 10px;
+    border-bottom: 10px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-    ;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
